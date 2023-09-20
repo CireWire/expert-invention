@@ -1,3 +1,14 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Author: CireWire
+Date: 09/19/2023
+Description: This program scales a recipe based on user input.
+License: MIT License
+Version: 1.0
+"""
+
+# Define function to scale recipe
 def scale_recipe(recipe, serving_size):
     scaled_recipe = {}
     for ingredient, data in recipe.items():
@@ -11,6 +22,7 @@ def scale_recipe(recipe, serving_size):
         scaled_recipe[ingredient] = {"quantity": scaled_quantity, "metric": metric}
     return scaled_recipe
 
+# Define main function
 def main():
     print("Welcome to the Recipe Scaler!")
     print("-----------------------------")
